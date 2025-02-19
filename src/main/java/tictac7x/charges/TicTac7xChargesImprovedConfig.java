@@ -99,6 +99,7 @@ public interface TicTac7xChargesImprovedConfig extends Config {
     String ring_of_the_elements = "ring_of_the_elements";
     String ring_of_endurance = "ring_of_endurance";
     String sanguinesti_staff = "sanguinesti_staff";
+    String scythe_of_vitur = "scythe_of_vitur";
     String seed_box = "seed_box";
     String skills_necklace = "skills_necklace";
     String skull_sceptre = "skull_sceptre";
@@ -925,6 +926,13 @@ public interface TicTac7xChargesImprovedConfig extends Config {
         ) default boolean sanguinestiStaffInfobox() { return true; }
 
         @ConfigItem(
+            keyName = scythe_of_vitur + infobox,
+            name = "Scythe of Vitur",
+            description = "",
+            section = infoboxes
+        ) default boolean scytheOfViturInfobox() { return true; }
+
+        @ConfigItem(
             keyName = skull_sceptre + infobox,
             name = "Skull sceptre",
             description = "",
@@ -1646,6 +1654,13 @@ public interface TicTac7xChargesImprovedConfig extends Config {
         ) default boolean sanguinestiStaffOverlay() { return true; }
 
         @ConfigItem(
+            keyName = scythe_of_vitur + overlay,
+            name = "Scythe of Vitur",
+            description = "",
+            section = overlays
+        ) default boolean scytheOfViturOverlay() { return true; }
+
+        @ConfigItem(
             keyName = skull_sceptre + overlay,
             name = "Skull sceptre",
             description = "",
@@ -1951,6 +1966,13 @@ public interface TicTac7xChargesImprovedConfig extends Config {
             description = sanguinesti_staff,
             section = debug
         ) default int getSanguinestiStaffCharges() { return Charges.UNKNOWN; }
+
+        @ConfigItem(
+            keyName = scythe_of_vitur,
+            name = scythe_of_vitur,
+            description = scythe_of_vitur,
+            section = debug
+        ) default int getScytheOfViturCharges() { return Charges.UNKNOWN; }
 
         @ConfigItem(
             keyName = skull_sceptre,
